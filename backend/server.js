@@ -52,3 +52,17 @@ app.use(cors({
   credentials: true
 }));
 
+// Add your Vercel URL here
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://rec-events.vercel.app', // REPLACE with YOUR actual Vercel URL
+    'https://rec-events.vercel.app' // Add all Vercel preview URLs too
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
+}));
+
+
+

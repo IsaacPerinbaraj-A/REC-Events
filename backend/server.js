@@ -48,6 +48,7 @@ app.listen(PORT, () => {
 });
 
 app.use(cors({
-  origin: ['https://your-frontend.vercel.app', 'http://localhost:3000'],
+  origin: ['https://rec-events.vercel.app', 'http://localhost:3000'],
   credentials: true
 }));
+
